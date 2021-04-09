@@ -25,8 +25,8 @@
 
 
 Components.utils.import("resource://gre/modules/Services.jsm");
-import ItemTree from 'containers/itemTree';
-import { getDefaultColumnsByDataKeys } from 'containers/itemTreeColumns';
+import ItemTree from 'itemTree';
+import { getDefaultColumnsByDataKeys } from 'itemTreeColumns';
 
 
 var ZoteroAdvancedSearch = new function() {

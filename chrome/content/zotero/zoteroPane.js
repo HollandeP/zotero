@@ -986,7 +986,7 @@ var ZoteroPane = new function()
 
 	this.initItemsTree = async function () {
 		try {
-			const ItemTree = require('containers/itemTree');
+			const ItemTree = require('itemTree');
 			var itemsTree = document.getElementById('zotero-items-tree');
 			ZoteroPane.itemsView = await ItemTree.init(itemsTree, {
 				id: "main",
@@ -1009,7 +1009,7 @@ var ZoteroPane = new function()
 
 	this.initCollectionsTree = async function () {
 		try {
-			const CollectionTree = require('containers/collectionTree');
+			const CollectionTree = require('collectionTree');
 			var collectionsTree = document.getElementById('zotero-collections-tree');
 			ZoteroPane.collectionsView = await CollectionTree.init(collectionsTree, {
 				onSelectionChange: prevSelection => ZoteroPane.onCollectionSelected(prevSelection),
